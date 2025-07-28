@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caretakers | Caretaker io</title>
+  <link rel="icon" href="images/logohead.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logohead.webp" alt="Logo" />
+        <span>Caretaker io</span>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="caretakers.html">Caretakers</a>
+        <a href="jobapplication.html">Job Registration</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+      <button class="login-btn">LOG IN</button>
+    </nav>
+  </header>
+
+  <!-- Caretakers Section -->
+  <section class="caretakers-list">
+  <div class="caretakers-overlay"></div>
+  <h2>Some of our Caretakers</h2>
+  <p>Meet our dedicated caretakers who are here to provide the best care and support.</p>
+  
+  <div class="caretaker-cards">
+    <!-- Row 1 -->
+    <div class="caretaker-card">
+      <img src="images/Priya.jpg" alt="Diva Shetti" />
+      <div class="caretaker-name">Diva Shetti</div>
+      <div class="caretaker-age">Age: 99</div>
+      <div class="caretaker-rating">★☆☆☆☆</div>
+    </div>
+    <div class="caretaker-card">
+      <img src="images/diva.jpg" alt="Dipti Verma" />
+      <div class="caretaker-name">Dipti Verma</div>
+      <div class="caretaker-age">Age: 21</div>
+      <div class="caretaker-rating">★★★★☆</div>
+    </div>
+    <div class="caretaker-card">
+      <img src="images/aran.jpg" alt="Aran Mane" />
+      <div class="caretaker-name">Aran Mane</div>
+      <div class="caretaker-age">Age: 20</div>
+      <div class="caretaker-rating">★★★☆☆</div>
+    </div>
+    <div class="caretaker-card">
+      <img src="images/kalash.jpg" alt="Kalash Mane" />
+      <div class="caretaker-name">Kalash Mane</div>
+      <div class="caretaker-age">Age: 21</div>
+      <div class="caretaker-rating">★★★★★</div>
+    </div>
+  </div>
+  
+  <div class="caretaker-cards">
+    <!-- Row 2 -->
+    <div class="caretaker-card">
+      <img src="images/Omkar.jpg" alt="Omkar Pawar" />
+      <div class="caretaker-name">Omkar Pawar</div>
+      <div class="caretaker-age">Age: 21</div>
+      <div class="caretaker-rating">★★★☆☆</div>
+    </div>
+    <div class="caretaker-card">
+      <img src="images/Yogesh.png" alt="Yogesh Angude" />
+      <div class="caretaker-name">Yogesh Angude</div>
+      <div class="caretaker-age">Age: 19</div>
+      <div class="caretaker-rating">★★★★★</div>
+    </div>
+    <div class="caretaker-card">
+      <img src="images/Pranshu.jpg" alt="Pranshu Awasthi" />
+      <div class="caretaker-name">Pranshu Awasthi</div>
+      <div class="caretaker-age">Age: 20</div>
+      <div class="caretaker-rating">★★★★★</div>
+    </div>
+    <div class="caretaker-card">
+      <img src="images/shrawan.jpg" alt="Shrawan Dhawale" />
+      <div class="caretaker-name">Shrawan Dhawale</div>
+      <div class="caretaker-age">Age: 21</div>
+      <div class="caretaker-rating">★★★★★</div>
+    </div>
+    
+  </div>
+</section>
+ <div class="blur-bg-overlay"></div>
+
+  <div class="form-popup">
+    <span class="close-btn material-symbols-rounded">X</span>
+
+    <!-- Login Form -->
+    <div class="form-box login">
+      <div class="form-details">
+        <h2>Welcome Back</h2>
+        <p>Please log in using your personal information to stay connected with us.</p>
+      </div>
+      <div class="form-content">
+        <h2>LOGIN</h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <a href="#" class="forgot-pass-link">Forgot password?</a>
+          <button type="submit">Log In</button>
+        </form>
+        <div class="bottom-link">
+          Don't have an account?
+          <a href="#" id="signup-link">Signup</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-box signup">
+      <div class="form-details">
+        <h2>Create Account</h2>
+        <p>To become a part of our holy community, please sign up using your personal information and measurements.</p>
+      </div>
+      <div class="form-content">
+        <h2>SIGNUP</h2>
+        <form id="signup-form" action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Create password</label>
+          </div>
+          <div class="policy-text">
+            <input type="checkbox" id="policy" required />
+            <label for="policy">
+              I agree to the <a href="#" class="option">Terms & Conditions</a>
+            </label>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="bottom-link">
+          Already have an account? 
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Terms & Conditions Popup -->
+<div class="terms-popup">
+  <div class="terms-content">
+    <span class="terms-close-btn material-symbols-rounded">X</span>
+    <h2>Terms & Conditions</h2>
+    <div class="terms-text">
+      <p>
+        <!-- Put your actual terms here -->
+        Welcome to GIVE ME A BANANA! By using our website, you agree to the following terms and conditions...
+        but as a fellow man of culture, you know that these terms are just a formality, right? i wish i could just give you a banana and call it a day, but alas, we must adhere to the rules of the internet.
+        in this digital jungle, we promise to respect your privacy and not share your personal information with anyone who doesn't deserve it. we also expect you to be respectful and not engage in any shenanigans that could ruin the fun for everyone else.
+        if you have any questions or concerns, feel free to reach out to us. we're here to help, and we promise to respond faster than a monkey can peel a banana.
+      </p>
+      <!-- Add more terms as needed -->
+    </div>
+    <div class="terms-actions">
+      <input type="checkbox" id="terms-read" />
+      <label for="terms-read">I have read and agree to the Terms & Conditions</label>
+    </div>
+    <button class="terms-ok-btn" disabled>OK</button>
+  </div>
+</div>
+<div class="terms-overlay"></div>
+
+  <script src="script.js"></script>
+  
+  <footer>
+    <p>&copy; 2023 Caretaker io. All rights reserved.</p>
+  </footer>
+</body>
+</html>

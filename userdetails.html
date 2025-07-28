@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Care Request Form | Caretaker io</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(120deg, #e3f2fd 0%, #f8fafc 100%);
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .care-request-container {
+      max-width: 480px;
+      margin: 48px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(49,130,206,0.10);
+      padding: 36px 28px 28px 28px;
+    }
+    .care-request-container h2 {
+      text-align: center;
+      color: #225ea8;
+      margin-bottom: 24px;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .care-request-form label {
+      display: block;
+      margin: 16px 0 6px 0;
+      font-weight: 600;
+      color: #225ea8;
+    }
+    .care-request-form input[type="text"],
+    .care-request-form input[type="number"],
+    .care-request-form select,
+    .care-request-form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 7px;
+      font-size: 1rem;
+      background: #f7fafc;
+      margin-bottom: 8px;
+      transition: border-color 0.2s;
+    }
+    .care-request-form input:focus,
+    .care-request-form select:focus,
+    .care-request-form textarea:focus {
+      border-color: #3182ce;
+      outline: none;
+    }
+    .care-request-form fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    .care-request-form legend {
+      font-weight: 600;
+      color: #225ea8;
+      margin-bottom: 6px;
+    }
+    .care-request-form label.checkbox-label {
+      font-weight: 400;
+      color: #333;
+      margin: 0 0 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .care-request-form button[type="submit"] {
+      margin-top: 18px;
+      padding: 12px 0;
+      background: #3182ce;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 2px 8px rgba(49,130,206,0.08);
+    }
+    .care-request-form button[type="submit"]:hover {
+      background: #225ea8;
+      transform: translateY(-2px) scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <div class="care-request-container">
+    <h2>Care Request Form</h2>
+    <form class="care-request-form" id="care-request-form">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="number" id="phone" name="phone" required />
+
+      <label for="address">Location / Address</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="whoNeedsCare">Who needs care?</label>
+      <select id="whoNeedsCare" name="whoNeedsCare" required>
+        <option value="">Select</option>
+        <option value="Elder">Elder</option>
+        <option value="Child">Child</option>
+      </select>
+
+      <label for="daysNeeded">How many days do you need the caregiver for?</label>
+      <input type="number" id="daysNeeded" name="daysNeeded" min="1" required placeholder="Example: 1, 2, 5, etc." />
+
+      <label for="timeSlot">Preferred Time Slot</label>
+      <select id="timeSlot" name="timeSlot" required>
+        <option value="">Select</option>
+        <option>Morning (7 AM – 12 PM)</option>
+        <option>Afternoon (12 PM – 4 PM)</option>
+        <option>Evening (4 PM – 8 PM)</option>
+        <option>Night (8 PM – 11 PM)</option>
+        <option>Full day</option>
+      </select>
+
+      <fieldset>
+        <legend>What tasks should the caregiver handle?</legend>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Taking care at home"> Taking care at home</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Giving medication on time"> Giving medication on time</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Assisting in walking or moving"> Assisting in walking or moving</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Feeding food or snacks"> Feeding food or snacks</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Taking to family functions/temples and bringing them back"> Taking to family functions/temples and bringing them back</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Talking, playing, or keeping company"> Talking, playing, or keeping company</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Helping with basic hygiene"> Helping with basic hygiene</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Emergency help if anything happens"> Emergency help if anything happens</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Reminding them to drink water or eat"> Reminding them to drink water or eat</label>
+        <label class="checkbox-label"><input type="checkbox" name="tasks" value="Reading newspaper/books or chatting to reduce loneliness"> Reading newspaper/books or chatting to reduce loneliness</label>
+      </fieldset>
+
+      <label for="language">Language Preference (if any)</label>
+      <input type="text" id="language" name="language" placeholder="Example: Hindi, Marathi, English, etc." />
+
+      <label for="notes">Any special medical conditions or notes?</label>
+      <textarea id="notes" name="notes" rows="2" placeholder="Example: Grandfather has high BP and takes medicine at 4 PM."></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

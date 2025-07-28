@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Caretaker io</title>
+  <link rel="icon" href="images/logohead.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logohead.webp" alt="Logo" />
+        <span>Caretaker io</span>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="caretakers.html">Caretakers</a>
+        <a href="jobapplication.html">Job Registration</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+      <button class="login-btn">LOG IN</button>
+    </nav>
+  </header>
+
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p class="about-mission">
+      Our mission is to connect families with trustworthy, AI-verified caretakers, making care safe, simple, and reliable for everyone.
+    </p>
+
+    <section class="our-story">
+      <h3>Our Story</h3>
+      <p>
+        Caretaker io started with a simple idea: to make finding reliable caretakers easy and stress-free. Since then, we've "tried" helping dozens of families and caretakers connect and thrive.
+      </p>
+    </section>
+
+    <h3>Meet the Team</h3>
+    <div class="team">
+  <div class="member horizontal-card">
+    <img src="images/shrawan.jpg" alt="Shrawan" class="team-photo" />
+    <div class="member-info">
+      <h4>Shrawan</h4>
+      <p>
+        Shrawan has created the frontend of this wonderful career guidance project. He designed the user interface and made sure the website is easy and enjoyable to use.
+      </p>
+      <div class="member-links">
+        <a href="mailto:shrawan@email.com">Email</a>
+        <a href="https://linkedin.com/in/shrawan" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="member horizontal-card">
+    <img src="images/pranshu.jpg" alt="Pranshu" class="team-photo" />
+    <div class="member-info">
+      <h4>Pranshu</h4>
+      <p>
+        Pranshu has worked on the backend and database. He built the server-side logic and made sure your data is stored safely and efficiently.
+      </p>
+      <div class="member-links">
+        <a href="mailto:pranshu@email.com">Email</a>
+        <a href="https://linkedin.com/in/pranshu" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <h3>Our Values</h3>
+    <ul class="about-values">
+      <li>✔️ AI-verified safety</li>
+      <li>✔️ Friendly, human support</li>
+      <li>✔️ Fast and easy process</li>
+    </ul>
+
+    <p class="about-cta">
+      Want to join our mission? <a href="jobapplication.html">Become a caretaker</a> or <a href="contact.html">contact us</a>!
+    </p>
+  </section>
+   <div class="blur-bg-overlay"></div>
+
+  <div class="form-popup">
+    <span class="close-btn material-symbols-rounded">X</span>
+
+    <!-- Login Form -->
+    <div class="form-box login">
+      <div class="form-details">
+        <h2>Welcome Back</h2>
+        <p>Please log in using your personal information to stay connected with us.</p>
+      </div>
+      <div class="form-content">
+        <h2>LOGIN</h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <a href="#" class="forgot-pass-link">Forgot password?</a>
+          <button type="submit">Log In</button>
+        </form>
+        <div class="bottom-link">
+          Don't have an account?
+          <a href="#" id="signup-link">Signup</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-box signup">
+      <div class="form-details">
+        <h2>Create Account</h2>
+        <p>To become a part of our holy community, please sign up using your personal information and measurements.</p>
+      </div>
+      <div class="form-content">
+        <h2>SIGNUP</h2>
+        <form id="signup-form" action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Create password</label>
+          </div>
+          <div class="policy-text">
+            <input type="checkbox" id="policy" required />
+            <label for="policy">
+              I agree to the <a href="#" class="option">Terms & Conditions</a>
+            </label>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="bottom-link">
+          Already have an account? 
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Terms & Conditions Popup -->
+<div class="terms-popup">
+  <div class="terms-content">
+    <span class="terms-close-btn material-symbols-rounded">X</span>
+    <h2>Terms & Conditions</h2>
+    <div class="terms-text">
+      <p>
+        <!-- Put your actual terms here -->
+        Welcome to GIVE ME A BANANA! By using our website, you agree to the following terms and conditions...
+        but as a fellow man of culture, you know that these terms are just a formality, right? i wish i could just give you a banana and call it a day, but alas, we must adhere to the rules of the internet.
+        in this digital jungle, we promise to respect your privacy and not share your personal information with anyone who doesn't deserve it. we also expect you to be respectful and not engage in any shenanigans that could ruin the fun for everyone else.
+        if you have any questions or concerns, feel free to reach out to us. we're here to help, and we promise to respond faster than a monkey can peel a banana.
+      </p>
+      <!-- Add more terms as needed -->
+    </div>
+    <div class="terms-actions">
+      <input type="checkbox" id="terms-read" />
+      <label for="terms-read">I have read and agree to the Terms & Conditions</label>
+    </div>
+    <button class="terms-ok-btn" disabled>OK</button>
+  </div>
+</div>
+<div class="terms-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

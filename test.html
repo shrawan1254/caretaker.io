@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caretaker Quick Test</title>
+   <link rel="icon" href="images/logohead.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quicktest-container">
+    <h2>Caretaker Quick Test</h2>
+    <form id="quicktest-form">
+      <div class="form-group">
+        <label>1. Do you have any previous experience in elder or child care?</label>
+        <select name="experience" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>2. Describe a time when you helped someone elderly.</label>
+        <textarea name="helped-elderly" rows="3" required></textarea>
+      </div>
+      <div class="form-group checkbox-group">
+        <label>3. Are you comfortable assisting with medication, walking, or attending functions?</label>
+        <label><input type="checkbox" name="assist" value="medication"> Medication</label>
+        <label><input type="checkbox" name="assist" value="walking"> Walking</label>
+        <label><input type="checkbox" name="assist" value="functions"> Attending functions</label>
+      </div>
+      <div class="form-group">
+        <label>4. Do you smoke or drink?</label>
+        <select name="smoke-drink" required>
+          <option value="">Select</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>5. How would you react if the elderly person falls or needs urgent help?</label>
+        <textarea name="urgent-help" rows="2" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>6. Are you comfortable being available on short notice or emergencies?</label>
+        <select name="short-notice" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>7. How do you usually communicate with elderly people?</label>
+        <textarea name="communicate" rows="2" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>8. Have you ever been involved in any police or legal complaint?</label>
+        <select name="legal-complaint" required>
+          <option value="">Select</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>9. Are you comfortable sharing a government ID and reference number?</label>
+        <select name="share-id" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>10. Why do you want to become a caregiver?</label>
+        <textarea name="motivation" rows="2" required></textarea>
+      </div>
+      <button type="submit">Submit Quick Test</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('quicktest-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const quickTestData = {
+    quick_experience: form.experience.value,
+    quick_helpedElderly: form['helped-elderly'].value,
+    quick_assist: Array.from(form.querySelectorAll('input[name="assist"]:checked')).map(cb => cb.value).join(','),
+    quick_smokeDrink: form['smoke-drink'].value,
+    quick_urgentHelp: form['urgent-help'].value,
+    quick_shortNotice: form['short-notice'].value,
+    quick_communicate: form.communicate.value,
+    quick_legalComplaint: form['legal-complaint'].value,
+    quick_shareId: form['share-id'].value,
+    quick_motivation: form.motivation.value
+  };
+  localStorage.setItem('quickTestData', JSON.stringify(quickTestData));
+  localStorage.setItem('quickTestComplete', 'true');
+  alert('Quick Test completed! You can now submit your job application.');
+  window.close();
+    });
+  </script>
+</body>
+</html>

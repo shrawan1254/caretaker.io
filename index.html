@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Caretaker io</title>
+  <link rel="icon" href="images/logohead.webp" type="image/x-icon" />
+  <!-- Google Fonts Link For Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+    <div class="logo">
+      <!-- Replace with your logo image if you have one -->
+      <img src="images/logohead.webp" alt="Logo" />
+      <span>Caretaker io</span>
+    </div>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="caretakers.html">Caretakers</a>
+      <a href="jobapplication.html">Job Registration</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <button class="login-btn">LOG IN</button>
+  </nav>
+</header>
+
+  <div class="blur-bg-overlay"></div>
+
+  <div class="form-popup">
+    <span class="close-btn material-symbols-rounded">close</span>
+
+    <!-- Login Form -->
+    <div class="form-box login">
+      <div class="form-details">
+        <h2>Welcome Back</h2>
+        <p>Please log in using your personal information to stay connected with us.</p>
+      </div>
+      <div class="form-content">
+        <h2>LOGIN</h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <a href="#" class="forgot-pass-link">Forgot password?</a>
+          <button type="submit">Log In</button>
+        </form>
+        <div class="bottom-link">
+          Don't have an account?
+          <a href="#" id="signup-link">Signup</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-box signup">
+      <div class="form-details">
+        <h2>Create Account</h2>
+        <p>To become a part of our holy community, please sign up using your personal information and measurements.</p>
+      </div>
+      <div class="form-content">
+        <h2>SIGNUP</h2>
+        <form id="signup-form" action="#">
+          <div class="input-field">
+            <input type="text" required />
+            <label>Enter your email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" required />
+            <label>Create password</label>
+          </div>
+          <div class="policy-text">
+            <input type="checkbox" id="policy" required />
+            <label for="policy">
+              I agree to the <a href="#" class="option">Terms & Conditions</a>
+            </label>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div class="bottom-link">
+          Already have an account? 
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Terms & Conditions Popup -->
+<div class="terms-popup">
+  <div class="terms-content">
+    <span class="terms-close-btn material-symbols-rounded">close</span>
+    <h2>Terms & Conditions</h2>
+    <div class="terms-text">
+      <p>
+        <!-- Put your actual terms here -->
+        Welcome to GIVE ME A BANANA! By using our website, you agree to the following terms and conditions...
+        but as a fellow man of culture, you know that these terms are just a formality, right? i wish i could just give you a banana and call it a day, but alas, we must adhere to the rules of the internet.
+        in this digital jungle, we promise to respect your privacy and not share your personal information with anyone who doesn't deserve it. we also expect you to be respectful and not engage in any shenanigans that could ruin the fun for everyone else.
+        if you have any questions or concerns, feel free to reach out to us. we're here to help, and we promise to respond faster than a monkey can peel a banana.
+      </p>
+      <!-- Add more terms as needed -->
+    </div>
+    <div class="terms-actions">
+      <input type="checkbox" id="terms-read" />
+      <label for="terms-read">I have read and agree to the Terms & Conditions</label>
+    </div>
+    <button class="terms-ok-btn" disabled>OK</button>
+  </div>
+</div>
+<div class="terms-overlay"></div>
+<!-- HERO SECTION -->
+<section class="hero" style="padding: 120px 20px 80px; text-align: center; background: linear-gradient(to right, #e3f2fd, #ffffff);">
+  <h1 style="font-size: 3rem; color: #1a237e;">Care You Can Trust</h1>
+  <p style="font-size: 1.2rem; color: #333; max-width: 600px; margin: 20px auto;">
+    Connecting families with compassionate, verified part-time caregivers across the country.
+  </p>
+  <div style="margin-top: 30px;">
+    <a href="userdetails.html" class="apply-btn">Find a Caregiver</a>
+    <a href="jobapplication.html" class="apply-btn" style="background: #38a169;">Apply as Caregiver</a>
+  </div>
+</section>
+<!-- FEATURES SECTION -->
+<section class="why-choose-us" style="padding: 60px 20px; text-align: center; background: #f0f4f8;">
+  <h2 style="font-size: 2rem; color: #225ea8; margin-bottom: 30px;">Why Choose Caretaker io?</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+    <div style="max-width: 240px;">
+      <img src="images/verified.png" alt="Verified" style="width: 60px;">
+      <h3>Verified Caregivers</h3>
+      <p>All caregivers undergo strict background checks for your peace of mind.</p>
+    </div>
+    <div style="max-width: 240px;">
+      <img src="images/match.png" alt="Matching" style="width: 60px;">
+      <h3>Smart Matching</h3>
+      <p>We connect you with the most suitable caregiver based on your needs.</p>
+    </div>
+    <div style="max-width: 240px;">
+      <img src="images/ai.png" alt="AI Trust Score" style="width: 60px;">
+      <h3>AI Trust Score</h3>
+      <p>Our AI system ensures accountability, reliability, and quality support.</p>
+    </div>
+  </div>
+</section>
+<!-- HOW IT WORKS SECTION -->
+<section id="how-it-works" style="padding: 60px 20px; text-align: center;">
+  <h2 style="font-size: 2rem; margin-bottom: 30px;">How It Works</h2>
+  <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
+    <div>
+      <span class="material-symbols-rounded" style="font-size: 40px;">person_add</span>
+      <h3>1. Sign Up</h3>
+      <p>Create your profile as a family or caregiver.</p>
+    </div>
+    <div>
+      <span class="material-symbols-rounded" style="font-size: 40px;">list_alt</span>
+      <h3>2. Set Your Needs</h3>
+      <p>Share your schedule, location, and caregiver preferences.</p>
+    </div>
+    <div>
+      <span class="material-symbols-rounded" style="font-size: 40px;">volunteer_activism</span>
+      <h3>3. Get Matched</h3>
+      <p>We connect you with trusted part-time caregivers in minutes.</p>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials" style="padding: 60px 20px; background: #e8f5e9; text-align: center;">
+  <h2>What Families Are Saying</h2>
+  <div style="max-width: 800px; margin: 30px auto;">
+    <blockquote>"Caretaker io helped us find the perfect part-time caregiver for my mom. The whole process was simple and reassuring!"</blockquote>
+    <p>– Radhika S., Mumbai</p>
+    <blockquote>"I felt safe, supported, and matched with the right family within days of applying."</blockquote>
+    <p>– Nikhil M., Verified Caregiver</p>
+  </div>
+</section>
+
+<!-- FOOTER SECTION just some thing new -->
+<footer style="background: #0d47a1; color: white; padding: 40px 20px; text-align: center;">
+  <p>&copy; 2025 Caretaker io. All rights reserved.</p>
+  <div style="margin-top: 10px;">
+    <a href="terms.html" style="color: #bbdefb;">Terms & Conditions</a> | 
+    <a href="privacy.html" style="color: #bbdefb;">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
